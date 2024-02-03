@@ -4,6 +4,9 @@ body{
     background-color: #EF8354;
 }
 
+.all-btns{
+    transition: all 0.5s;
+}
 .hero-section{
     background-color: #D9D9D9;
 }
@@ -20,6 +23,10 @@ body{
     padding: 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    transition: all 0.5s;
+}
+.nav:hover{
+    color: #EF8354;
 }
 
 #intro{
@@ -35,26 +42,36 @@ body{
 #hero-data{
     display: flex;
     justify-content: center;
+
+    
 }
+
+
 #hero-data-img{
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
+    /* display: block; */
+    margin-left: 15rem;
+    margin-right: auto;
     max-width: 80%;
 }
 
 #hero-data .go-to {
     position: absolute;
-    top: 73%;
-    left: 80%;
+    top: 75%;
+    left: 85%;
     transform: translate(-60%, -100%);
     width: 100px;
-    cursor: pointer;
+    cursor: pointer; 
+    
+    
+}
+
+#hero-data .go-to:hover{
+    color:#202020;
 }
 #hero-data .btn {
     position: absolute;
     top: 90%;
-    left: 50%;
+    left: 51.5%;
     transform: translate(-60%, -100%);
     background-color: #EF8354;
     color: white;
@@ -66,17 +83,46 @@ body{
 
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+
+    
+  }
+
+#hero-data .btn:hover{
+    color: #EF8354;
+    background-color: white;
   }
 
 /* Section 2 */
+.name-about{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    font-family: 'Raleway', sans-serif;
+    color: white;
+
+    
+}
+
+.name-about .about-header{
+    padding-bottom: 1em;
+}
+.name-about #about-info{
+    padding-bottom: 1.5em;
+    font-size: 21px;
+}
+
 .primary-info{
     display: flex;
     justify-content: center;
-    margin-top: 10em;
-   
+    margin-top: 15em;
+    margin-bottom: 1em;
 }
 
-#btn-white {
+.name-about .btn-white {
     background-color: white;
     color: #EF8354;
     font-size: 32px;
@@ -86,23 +132,39 @@ body{
     border-radius: 40px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+
+    margin-bottom: 5em;
+    transition: all 0.5s;
 }
 
+.name-about .btn-white:hover {
+    color: white;
+    background-color: #202020;
+}
 
 
 /* Footer */
 .socials{
     display: flex;
     justify-content: center;
-    
+    transition: all 0.5s;
 }
 
 .resize-soc{
     width: 35px;
     padding: 0 10px 0 10px;
     margin-bottom: 1rem;
+    cursor: pointer;
+
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
 }
 
+.resize-soc:hover{
+    color: #202020;
+    top: -10px;
+}
 #footer{
     display: flex;
     justify-content: center;
