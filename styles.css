@@ -88,6 +88,9 @@ body{
     font-weight: 400;
 }
 
+
+
+/* Footer */
 .socials{
     display: flex;
     justify-content: center;
@@ -95,7 +98,16 @@ body{
 }
 
 .resize-soc{
-    width: 50px;
+    width: 35px;
     padding: 0 10px 0 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
 }
