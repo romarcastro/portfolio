@@ -3,9 +3,16 @@ html{
     scroll-behavior: smooth;
 }
 
+
+.font-family{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600 v ;
+}
 body{
     margin: 0;
     background-color: #EF8354;
+    
+    
 }
 
 .all-btns{
@@ -56,6 +63,9 @@ body{
     max-width: 80%;
 }
 
+#hero-data-img-phone{
+    display: none;
+}
 #hero-data .go-to {
     position: absolute;
     top: 75%;
@@ -70,8 +80,6 @@ body{
     opacity: 90%;
 }
 
-
-
 #hero-data .btn {
     position: absolute;
     top: 90%;
@@ -80,23 +88,56 @@ body{
     background-color: #EF8354;
     color: white;
     font-size: 32px;
-    padding: 12px 24px;
+    padding: 15px 30px;
     border: none;
     cursor: pointer;
     border-radius: 40px;
 
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-
-    
   }
 
 #hero-data .btn:hover{
     color: #EF8354;
     background-color: white;
   }
+/* Hero Phone */
+@media only screen and (max-width: 430px)  {
+    .nav{
+        font-size: 1em;
+    }
+    #intro{
+        font-size: 2em;
+    }
+    #hero-data{
+        overflow: hidden;
+    }
+    #hero-data-img{
+        display: none;
+    }
+    #hero-data-img-phone{
+      display: block;
+      width: 30em;
+      margin-top: 4em; 
+    }
+    
+    #intro{
+        justify-content: left;
+        margin: 2.5em 1.5em 0 1.5em;
+    }
 
+    .go-to{
+        display: none;
+    }
+    #hero-data .btn{
+        font-size: 20px;
+        padding: 15px 20px;
+        border-radius: 40px;
+        
+    }
+}
 /* Section 2 */
+
 .name-about{
    
     display: flex;
@@ -107,17 +148,19 @@ body{
 
     font-family: 'Raleway', sans-serif;
     color: white;
-
     
 }
 
 .name-about .about-header{
     padding-bottom: 1em;
 }
+.Rc-name{
+    width: 700px;
+}
 .name-about #about-info{
     padding-bottom: 1.5em;
     font-size: 21px;
-    
+    max-width: 36%;
 }
 
 .primary-info{
@@ -125,13 +168,14 @@ body{
     justify-content: center;
     margin-top: 15em;
     margin-bottom: 1em;
+    
 }
 
 .btn-white {
     background-color: white;
     color: #EF8354;
     font-size: 32px;
-    padding: 12px 24px;
+    padding: 15px 30px;
     border: none;
     cursor: pointer;
     border-radius: 40px;
@@ -147,7 +191,23 @@ body{
     background-color: #202020;
 }
 
-
+@media only screen and (max-width: 430px)  {
+    .Rc-name{
+        width: 20em;
+    }
+    .name-about-name{
+        font-size: 1em;
+    }
+    .name-about #about-info{
+        font-size: 1.2em;
+        max-width: 75%;
+    }
+    .btn-white{
+        font-size: 20px;
+        padding: 15px 20px;
+        border-radius: 40px;
+    }
+}
 /* Footer */
 .socials{
     display: flex;
@@ -184,5 +244,43 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15rem;
+    margin-top: 10rem;
+    
+}
+.maintenance-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px 0 1px 0;
+    text-align: center;
+}
+
+.maintenance-btn{
+    padding-top: 2em;
+}
+/* Contacts */
+
+.contact{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form{
+    /* padding: 15px 100px;
+    border-radius: 5px;
+    background-color:hsl(0, 0%, 93%);
+    text-align: left;
+    margin: 10px 0; */
+    display: block;
+    font-size:11px;
+    padding:4px 2px;
+    border:solid 1px #aacfe4;
+    width:70px;
+    margin:2px 0 20px 10px;
+
+}
+
+.message{
+    padding: 100px 100px;
 }
